@@ -58,7 +58,7 @@ class TestRunner:
         input_file.close()
         output_file.close()
 
-        print('Input file "{0}" finished in {round(run_time, 3)} seconds'.format(input_file.name))
+        print('Input file "{0}" finished in {1} seconds'.format(input_file.name, round(run_time, 3)))
         return run_time
 
     def run_test(self, testName):
