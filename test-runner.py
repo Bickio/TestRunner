@@ -71,7 +71,7 @@ class TestRunner:
         input_files = sorted(self.tests_path.glob('*-input.txt'))
         output_files = sorted(self.tests_path.glob('*-output.txt'))
         if len(input_files) != len(output_files):
-            raise ValueError('different number if input files to output files')
+            raise ValueError('different number of input files to output files')
 
         total = len(input_files)
         passed = 0
